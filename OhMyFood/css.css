@@ -341,7 +341,6 @@ h3.card-menu-title {
 
 .menuA {
     width: 2000%;
-    transition: 1.5s;
 }
 
 
@@ -442,5 +441,20 @@ h3.card-menu-title {
         justify-content: center;
     }
 
+    .card-menu:hover .menuIcon {
+        right: 0px;
+    }
 
+    .card-menu:hover .menuA {
+        width: 100%
+    }
+
+    .card-menu:hover .info-menu {
+        width: 90%;
+    }
+
+    .menuIcon {
+        width: 5%;
+        margin-top: -20px;
+    }
 }
