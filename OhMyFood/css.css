@@ -1,12 +1,6 @@
-@media (min-width: 600px) {
-    p {}
-}
-
 #loader {
     border: 16px solid #f3f3f3;
-    /* Light grey */
-    border-top: 16px solid #3498db;
-    /* Blue */
+    border-top: 16px solid #FF79DA;
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -25,7 +19,9 @@
     }
 }
 
-
+.body {
+    animation-delay: 2s;
+}
 
 a:link {
     text-decoration: none;
@@ -71,6 +67,8 @@ i#lieu-icon {
 
 #explorer {
     padding: 20px;
+    padding-right: 36px;
+    padding-left: 36px;
     cursor: pointer;
     font-family: 'roboto';
     border-radius: 47px;
@@ -87,7 +85,7 @@ i#lieu-icon {
 
 .fonctionnement {
     font-family: 'roboto';
-    margin-left: 30%;
+    margin-left: 10%;
     font-weight: 900;
 }
 
@@ -99,10 +97,11 @@ i#lieu-icon {
 }
 
 
+
 .filtres {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 16px;
     box-shadow: 6px 6px 8px #dddddd;
@@ -110,6 +109,7 @@ i#lieu-icon {
     margin-bottom: 24px;
     background-color: #F2F2F2;
     cursor: pointer;
+    width: 80%;
 }
 
 .filtres:hover {
@@ -119,8 +119,20 @@ i#lieu-icon {
 
 }
 
+.fa-mobile-screen-button {
+    margin-left: 20px;
+}
+
+.fa-list {
+    margin-left: 20px;
+}
+
+.fa-store {
+    margin-left: 20px;
+}
+
 .text-tuto {
-    margin-left: 24px;
+    margin-left: 54px;
     margin-right: 12px;
     font-family: 'roboto';
     font-weight: 900;
@@ -134,6 +146,7 @@ i#lieu-icon {
     background-color: blueviolet;
     padding: 13px;
     border-radius: 43px;
+    color: white;
 }
 
 .fa-2 {
@@ -144,6 +157,7 @@ i#lieu-icon {
     background-color: blueviolet;
     padding: 13px;
     border-radius: 43px;
+    color: white;
 }
 
 .fa-3 {
@@ -154,6 +168,7 @@ i#lieu-icon {
     background-color: blueviolet;
     padding: 13px;
     border-radius: 43px;
+    color: white;
 }
 
 #restaurant {
@@ -196,7 +211,7 @@ i#lieu-icon {
     height: auto;
     border-radius: 12px 12px 0px 0px;
     object-fit: cover;
-    height: calc(100vh / 6);
+    height: calc(190vh / 6);
     width: 100%;
 }
 
@@ -224,10 +239,17 @@ i#lieu-icon {
     margin-top: -24px;
 }
 
+.fa-heart {
+    color: #9356DC;
+    cursor: pointer;
+}
+
 .fa-heart:hover {
-    color: red;
     transform: scale(1.4);
-    animation-duration: 1s;
+    transition: all 1s ease-in;
+    animation-duration: 2s;
+    font-weight: 900;
+    background-color: linear-gradient(to bottom right, #9a62df, #f783d6);
 }
 
 footer {
@@ -255,9 +277,33 @@ footer {
 #img-footer {
     width: 20%;
     margin-left: 24px;
-    margin-bottom: 12px;
+    margin-bottom: 35px;
     color: white;
 }
+
+
+.footerA {
+    margin-left: 12px;
+}
+
+.nouveau {
+    color: #1c765f;
+    background-color: #99e2d0bd;
+    padding: 6px;
+    overflow: hidden;
+    margin-top: -202px;
+    margin-bottom: 170px;
+    margin-left: 80%;
+    margin-right: 5%;
+    font-family: 'roboto';
+    font-weight: 900;
+    border-radius: 5px;
+}
+
+
+
+
+
 
 /* Menu1*/
 
@@ -282,7 +328,7 @@ i#arrow {
 }
 
 .menu {
-    background-color: #dddddd;
+    background-color: #f0f0f0;
     border-radius: 24px 24px 0px 0px;
     overflow: visible;
     margin-top: -130px;
@@ -346,16 +392,30 @@ h3.card-menu-title {
 }
 
 
+.fa-check {
+    background-color: white;
+    color: #99E2D0;
+    border-radius: 45px;
+    padding: 8px;
+    margin-top: 80%;
+    margin-left: 12px;
+}
+
 .menuIcon {
     width: 10%;
     position: relative;
     transition: right 1s;
     right: -150px;
-    background-color: green;
+    background-color: #99E2D0;
 }
 
 .card-menu:hover .menuIcon {
     right: 0px;
+}
+
+.card-menu:hover .fa-check {
+    transform: rotate(180deg);
+    transition: 1.5s;
 }
 
 .card-menu:hover .menuA {
@@ -372,7 +432,7 @@ h3.card-menu-title {
     border-radius: 42px;
     font-weight: 900;
     display: inline-block;
-    margin-left: 50%;
+    margin-left: 40%;
     font-family: 'roboto';
     margin-top: 40px;
     margin-bottom: 40px;
@@ -386,10 +446,7 @@ h3.card-menu-title {
     background: linear-gradient(to bottom right, #9a62df, #f783d6);
 }
 
-.fa-check {
-    margin-top: 90%;
-    margin-left: 12px;
-}
+
 
 
 #elispe {
