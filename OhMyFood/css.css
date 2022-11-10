@@ -397,12 +397,14 @@ h3.card-menu-title {
     color: #99E2D0;
     border-radius: 45px;
     padding: 8px;
-    margin-top: 80%;
-    margin-left: 12px;
 }
 
 .menuIcon {
-    width: 10%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     position: relative;
     transition: right 1s;
     right: -150px;
@@ -414,12 +416,12 @@ h3.card-menu-title {
 }
 
 .card-menu:hover .fa-check {
-    transform: rotate(180deg);
-    transition: 1.5s;
+    transform: rotate(360deg);
+    transition: 1s;
 }
 
 .card-menu:hover .menuA {
-    width: 100%
+    width: 80%
 }
 
 .card-menu:hover .info-menu {
@@ -449,13 +451,17 @@ h3.card-menu-title {
 
 
 
-#elispe {
+.elipse {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    background-color: red;
+    border: red 2px solid;
 }
 
+
+#prix {
+    border: red 2px solid;
+}
 
 
 .entrees {
