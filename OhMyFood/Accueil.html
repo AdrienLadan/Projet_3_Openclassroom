@@ -15,11 +15,15 @@
         rel="stylesheet">
 </head>
 
-<body onload="myFunction()" style="margin:0;">
 
-    <div id="loader"></div>
+<div class="loader"></div>
 
-    <div style="display:none;" id="myDiv" class="animate-bottom">
+
+<body>
+
+
+
+    <div id="tout">
         <header>
             <img src="MaquettesOhmyFood/images/logo/ohmyfood.png" alt="logo">
         </header>
@@ -31,8 +35,8 @@
         </div>
 
         <div class="intro">
-            <h1>Réservez le menu qui vous convient</h1>
-            <h3>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h3>
+            <h1 class="titre">Réservez le menu qui vous convient</h1>
+            <h3 class="titre">Découvrez des restaurants d'exception, sélectionnés par nos soins.</h3>
             <p id="explorer">Explorer nos restaurants</p>
         </div>
 
@@ -66,7 +70,7 @@
                     <h3 class="card-title">La palette du goût</h3>
                     <div class="icon-card">
                         <p class="sub-title-card">Ménilmontant</p>
-                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-heart" class="heartt"></i>
                     </div>
                 </a>
                 <a href="menu2.html" class="card">
@@ -75,7 +79,7 @@
                     <h3 class="card-title">La note enchantée</h3>
                     <div class="icon-card">
                         <p class="sub-title-card">Charonne</p>
-                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-heart" class="heartt"></i>
                     </div>
                 </a>
                 <a href="menu1.html" class="card">
@@ -83,7 +87,7 @@
                     <h3 class="card-title">A la française</h3>
                     <div class="icon-card">
                         <p class="sub-title-card">Cité rouge</p>
-                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-heart" class="heartt"></i>
                     </div>
                 </a>
                 <a href="menu4.html" class="card">
@@ -92,7 +96,7 @@
                     <h3 class="card-title">Le délice des sens</h3>
                     <div class="icon-card">
                         <p class="sub-title-card">Folie-Mélicourt</p>
-                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-heart" class="heartt"></i>
                     </div>
                 </a>
             </div>
@@ -118,18 +122,7 @@
         </footer>
     </div>
 
-    <script>
-        var myVar;
 
-        function myFunction() {
-            myVar = setTimeout(showPage, 1500);
-        }
-
-        function showPage() {
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("myDiv").style.display = "block";
-        }
-    </script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-#loader {
+loader {
     border: 16px solid #f3f3f3;
     border-top: 16px solid #FF79DA;
     border-radius: 50%;
@@ -9,6 +9,18 @@
     margin-top: 20%;
 }
 
+
+
+.loader {
+    border: #9356DC 10px dotted;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    padding: 113px;
+    animation: spin 3s forwards;
+    margin-left: 20%;
+}
+
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -16,11 +28,41 @@
 
     100% {
         transform: rotate(360deg);
+        opacity: 0;
+        margin-left: 250px;
+        width: 0px;
+        height: 0px;
+        padding: 0px;
     }
 }
 
-.body {
-    animation-delay: 2s;
+@keyframes oppacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#tout {
+    animation-delay: 0s;
+    animation: oppacity 4s forwards 2s;
+    opacity: 0;
+}
+
+
+.titre {
+    text-align: center;
+    margin-right: 24px;
+    margin-left: 24px;
+}
+
+
+
+.logo {
+    width: 50%;
 }
 
 a:link {
@@ -116,8 +158,22 @@ i#lieu-icon {
     transform: scale(1.1);
     background-color: #fff5f5;
     transition: 1s;
-
 }
+
+.filtres:hover .fa-mobile-screen-button {
+    color: #9356DC;
+}
+
+.filtres:hover .fa-list {
+    color: #9356DC;
+}
+
+.filtres:hover .fa-store {
+    color: #9356DC;
+}
+
+
+
 
 .fa-mobile-screen-button {
     margin-left: 20px;
@@ -140,17 +196,31 @@ i#lieu-icon {
 
 .fa-1 {
     margin-right: 24px;
+    width: 14px;
     object-fit: cover;
     margin-left: -35px;
     margin-right: 21px;
     background-color: blueviolet;
     padding: 13px;
-    border-radius: 43px;
+    border-radius: 100%;
     color: white;
 }
 
 .fa-2 {
     margin-right: 24px;
+    width: 14px;
+    object-fit: cover;
+    margin-left: -35px;
+    margin-right: 21px;
+    background-color: blueviolet;
+    padding: 13px;
+    border-radius: 100%;
+    color: white;
+}
+
+.fa-3 {
+    margin-right: 24px;
+    width: 14px;
     object-fit: cover;
     margin-left: -35px;
     margin-right: 21px;
@@ -160,16 +230,9 @@ i#lieu-icon {
     color: white;
 }
 
-.fa-3 {
-    margin-right: 24px;
-    object-fit: cover;
-    margin-left: -35px;
-    margin-right: 21px;
-    background-color: blueviolet;
-    padding: 13px;
-    border-radius: 43px;
-    color: white;
-}
+
+
+
 
 #restaurant {
     margin-left: 24px;
@@ -249,7 +312,6 @@ i#lieu-icon {
     transition: all 1s ease-in;
     animation-duration: 2s;
     font-weight: 900;
-    background-color: linear-gradient(to bottom right, #9a62df, #f783d6);
 }
 
 footer {
@@ -269,7 +331,7 @@ footer {
     align-items: center;
     margin-left: 24px;
     font-family: 'roboto';
-    margin-top: -21px;
+    margin-top: -38px;
     color: white;
     margin-bottom: 24px;
 }
@@ -288,7 +350,7 @@ footer {
 
 .nouveau {
     color: #1c765f;
-    background-color: #99e2d0bd;
+    background-color: #96dccb;
     padding: 6px;
     overflow: hidden;
     margin-top: -202px;
@@ -301,7 +363,9 @@ footer {
 }
 
 
-
+.heartt {
+    margin-top: -45px;
+}
 
 
 
@@ -432,6 +496,7 @@ h3.card-menu-title {
 
 .commander {
     border-radius: 42px;
+    color: white;
     font-weight: 900;
     display: inline-block;
     margin-left: 40%;
@@ -455,13 +520,8 @@ h3.card-menu-title {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    border: red 2px solid;
 }
 
-
-#prix {
-    border: red 2px solid;
-}
 
 
 .entrees {
@@ -521,5 +581,9 @@ h3.card-menu-title {
     .menuIcon {
         width: 5%;
         margin-top: -20px;
+    }
+
+    .loader {
+        margin-left: 40%;
     }
 }
