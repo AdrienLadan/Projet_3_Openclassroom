@@ -18,7 +18,7 @@ loader {
     height: 150px;
     padding: 113px;
     animation: spin 3s forwards;
-    margin-left: 20%;
+    margin-left: 10%;
 }
 
 @keyframes spin {
@@ -334,13 +334,15 @@ footer {
     margin-top: -38px;
     color: white;
     margin-bottom: 24px;
+    text-decoration: none;
 }
 
 #img-footer {
     width: 20%;
     margin-left: 24px;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
     color: white;
+    filter: invert(1);
 }
 
 
@@ -356,14 +358,26 @@ footer {
     margin-top: -202px;
     margin-bottom: 170px;
     margin-left: 80%;
-    margin-right: 5%;
+    margin-right: 3%;
     font-family: 'roboto';
     font-weight: 900;
     border-radius: 5px;
 }
 
 
-.heartt {
+#heart1 {
+    margin-top: -45px;
+}
+
+#heart2 {
+    margin-top: -45px;
+}
+
+#heart3 {
+    margin-top: -45px;
+}
+
+#heart4 {
     margin-top: -45px;
 }
 
@@ -503,7 +517,11 @@ h3.card-menu-title {
     font-family: 'roboto';
     margin-top: 40px;
     margin-bottom: 40px;
-    padding: 20px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    cursor: pointer;
     background: linear-gradient(to bottom right, #9356DC, #FF79DA);
 }
 
