@@ -287,10 +287,12 @@ i#lieu-icon {
 .card-title {
     margin-left: 12px;
     font-weight: 900;
+    color: black;
 }
 
 .sub-title-card {
     margin-left: 12px;
+    color: black;
 }
 
 .icon-card {
