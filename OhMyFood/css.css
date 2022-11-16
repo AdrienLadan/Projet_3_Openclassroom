@@ -306,7 +306,8 @@ i#lieu-icon {
 
 .fa-heart {
     cursor: pointer;
-    color: black;
+    color: #837979;
+    font-size: 1.4em;
 }
 
 .fa-heart:hover {
@@ -358,18 +359,23 @@ footer {
     margin-left: 12px;
 }
 
+
+.info-menu>p {
+    font-weight: 900;
+}
+
 .nouveau {
-    color: #1c765f;
+    color: #008766;
     background-color: #96dccb;
     padding: 6px;
-    overflow: hidden;
-    margin-top: -201px;
-    margin-bottom: 170px;
-    margin-left: 80%;
-    margin-right: 3%;
+    padding-right: 16px;
+    padding-left: 16px;
+    position: absolute;
+    margin-right: 50px;
+    right: 0;
     font-family: 'roboto';
-    font-weight: 900;
-    border-radius: 5px;
+    font-weight: bold;
+    border-radius: 3px;
 }
 
 
@@ -456,6 +462,8 @@ h3.card-menu-title {
     margin-left: 24px;
     font-family: 'roboto';
     font-weight: 900;
+    font-size: 1.3em;
+    margin-bottom: 0px;
 }
 
 .info-menu {
@@ -546,6 +554,7 @@ h3.card-menu-title {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: #837979;
 }
 
 
